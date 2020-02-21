@@ -1,1 +1,7 @@
-<h2>New cocktail</h2>
+<h2>Create new cocktail</h2>
+
+<%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name %>
+<!--   <%= f.input :photo, as: :file %>
+ -->  <%= f.submit %>
+<% end %>
