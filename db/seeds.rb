@@ -16,7 +16,7 @@ json[:drinks].each do |drink|
 end
 
 puts 'Destroying poisonous doses'
-Dose.destroy.all
+Dose.destroy_all
 Dose.create(description: '', cocktail: Cocktail.first)
 
 puts "Creating some cocktails"
